@@ -21,14 +21,26 @@ ul {
   margin-bottom: 0;
   padding-left: 0;
 }
+img {
+  display: block;
+}
+
+/* Utilits */
+
+.list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
 
 .container {
-  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 1230px;
   padding-left: 15px;
   padding-right: 15px;
-  margin: auto;
   align-items: center;
-  /* display: flex; */
+  border: 1px solid tomato;
 }
 
 .page {
@@ -68,6 +80,17 @@ ul {
   background-color: var(--primary-white-color);
 }
 
+/* Main nav */
+
+.main-nav {
+  display: flex;
+  align-items: center;
+}
+
+.page-header .container {
+  border-bottom: 1px solid #ececec;
+}
+
 /* logo */
 
 .page-header .logo {
@@ -88,14 +111,50 @@ ul {
 
 /* site-nav */
 
+.site-nav {
+  display: flex;
+  margin-left: 93px;
+}
+
+/* .site-nav .item {
+  border: 1px solid tomato;
+} */
+
+.site-nav .item + .item {
+  margin-left: 50px;
+}
+
+/* .site-nav .item:not(:last-child) {
+  margin-right: 50px;
+} */
+
+.site-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
+.auth-nav .link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .site-nav .link,
 .auth-nav .link {
-  color: var(--titel-text-color);
-  text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
+  text-decoration: none;
+}
+
+.site-nav .link {
+  color: var(--titel-text-color);
+}
+
+.auth-nav .link {
+  color: var(--primary-text-color);
 }
 .site-nav .link:hover,
 .site-nav .link:focus {
@@ -107,6 +166,13 @@ ul {
 }
 
 /* auth-nav */
+.auth-nav {
+  display: flex;
+  margin-left: auto;
+}
+.auth-nav .item + .item {
+  margin-left: 50px;
+}
 
 .auth-nav .link:hover,
 .auth-nav .link:focus {
@@ -127,7 +193,7 @@ ul {
   text-transform: uppercase;
 }
 
-.hero-button {
+.button-main {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   cursor: pointer;
@@ -176,6 +242,25 @@ ul {
 }
 
 /* features */
+
+.feature-list {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+
+.feature-list .item {
+  width: 270px;
+}
+
+.feature-list .item:not(:last-child) {
+  margin-right: 30px;
+}
+
+.feature-list .titel {
+  margin-bottom: 10px;
+}
 
 .feature-list .titel {
   color: var(--titel-text-color);
