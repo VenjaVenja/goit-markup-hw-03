@@ -54,7 +54,7 @@ img {
 /* Container */
 
 .container {
-  width: 1230px;
+  width: 1200px;
   margin-left: auto;
   margin-right: auto;
   padding-left: 15px;
@@ -342,6 +342,14 @@ img {
 .works-list .example {
   text-decoration: none;
 }
+
+.cards-info .titel {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+}
+
 .works-list .text {
   font-size: 16px;
   line-height: 1.87;
@@ -363,6 +371,7 @@ img {
 
 .cards-info {
   padding: 20px 24px;
+  border: 1px solid #eeeeee;
 }
 
 .cards-info .titel {
