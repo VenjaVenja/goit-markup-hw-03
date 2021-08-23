@@ -98,6 +98,7 @@ img {
 
 .page-header {
   background-color: var(--primary-white-color);
+  border-bottom: 1px solid #ececec;
 }
 
 /* Main nav */
@@ -105,10 +106,6 @@ img {
 .main-nav {
   display: flex;
   align-items: center;
-}
-
-.page-header .container {
-  border-bottom: 1px solid #ececec;
 }
 
 /* logo */
@@ -201,13 +198,10 @@ img {
 
 /* hero */
 .hero {
-  background-color: #2f303a;
-  text-align: center;
-}
-
-.hero-item {
   padding-top: 200px;
   padding-bottom: 200px;
+  background-color: #2f303a;
+  text-align: center;
 }
 
 .hero-titel {
@@ -272,9 +266,10 @@ img {
 }
 .section-team {
   background-color: var(--second-bg-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-titel {
-  padding-top: 47px;
   margin-bottom: 50px;
 }
 
@@ -285,23 +280,22 @@ img {
   line-height: 1.17;
   text-align: center;
 }
-/* .section-titel-goust,
-.section-filter-titel {
-  color: rgba(0, 0, 0, 0);
-} */
 
-.portfolio {
+.section-portfolio {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
 /* features */
 
+.section-feature {
+  padding-top: 94px;
+  padding-bottom: 47px;
+}
+
 .feature-list {
   display: flex;
   justify-content: space-between;
-  padding-top: 94px;
-  padding-bottom: 47px;
 }
 
 .feature-list .item {
@@ -331,10 +325,14 @@ img {
 
 /* works */
 
+.section-work {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
 .work-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 
 .work-list .item:not(:last-child) {
@@ -364,7 +362,7 @@ img {
 }
 
 .cards-info {
-  margin: 20px 24px;
+  padding: 20px 24px;
 }
 
 .cards-info .titel {
@@ -376,27 +374,26 @@ img {
 .team-list {
   display: flex;
   justify-content: space-between;
-  padding-bottom: 94px;
 }
 
 .team-list .item:not(:last-child) {
   margin-right: 30px;
 }
 
-.section-team .section-titel {
+/* .section-team .section-titel {
   padding-top: 94px;
-}
+} */
 
 .card {
   background-color: var(--primary-white-color);
-  padding-bottom: 30px;
   text-align: center;
   box-shadow: var(--car-shadow);
   border-radius: 4px;
 }
 
-.card-tumb {
-  margin-bottom: 30px;
+.card-info {
+  padding-top: 30px;
+  padding-bottom: 30px;
 }
 
 .team-list .titel {
@@ -450,6 +447,8 @@ img {
 /* Footer */
 
 .footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: #2f303a;
   color: var(--primary-text-color);
 }
@@ -473,11 +472,6 @@ img {
 .footer .link:hover,
 .footer .link:focus {
   color: var(--accent-color);
-}
-
-.main-footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
 }
 
 .footer-logo {
